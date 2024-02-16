@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="./image/favicon.png" type="image/x-icon" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+        
+        <!-- BOOTSTRAP 5.3 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        
+        <title>Site 1</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img
+                    src="./image/AK LOGO.png"
+                    alt=""
+                    width="50"
+                    height="40"
+                /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#produtos">Produtos</a>
+                    <a class="nav-link" href="#promocoes">Promoções</a>
+                    <a class="nav-link" href="#contato">Contato</a>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+        >
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="./image/img1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="./image/wheys.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="./image/card-blog.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- shop content -->
+        <div class="card-produtos-container" id="produtos">
+            <div class="title-products">Produtos</div>
+            <div class="card-produtos" id="shopContent"></div>
+        </div>
+
+        <!-- shop promocoes -->
+        <div class="card-produtos-container" id="promocoes">
+            <div class="title-products">Promoções</div>
+            <div class="card-produtos" id="shopPromocoes"></div>
+        </div>
+
+        <button class="btn-finalizar" onclick="finalizarPedido()">
+            Finalizar pedido
+        </button>
+
+        <footer id="contato">
+            <div id="contact-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="main-title">Entre em contato Conosco</h3>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                            <i class="bx bx-phone"></i>
+                            <p>
+                                <span class="contact-title">Ligue para:</span>
+                                (81)99999-9999
+                            </p>
+                            <p>
+                                <span class="contact-title">Horarios:</span>8:00
+                                às 18:00
+                            </p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                            <i class="bx bxs-envelope"></i>
+                            <p>
+                                <span class="contact-title"
+                                    >Envie um e-mail:</span
+                                >contato@hdcagency.com.br
+                            </p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                            <i class="bx bx-map"></i>
+                            <p>
+                                <span class="contact-title"
+                                    >Venha nos conhecer:</span
+                                >
+                                Rua Brasil -1318
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copy-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                Desenvolvido por
+                                <a
+                                    href="https://portfolio-marcosoliveiradev.netlify.app/"
+                                    target="_blank"
+                                    >Marcos Oliveira Dev
+                                </a>
+                                &copy; 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <button href="" id="btn-back-to-top" class="btn btn-primary back-to-top" role="button" aria-label="Voltar ao topo" data-bs-toggle="tooltip" data-bs-placement="left">
+            <i class="bi bi-arrow-up-circle-fill">Voltar</i>
+        </button>
+
+
+
+
+
+
+        <!-- BOOTSTRAP 5.3 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+
+        <script src="js/botaovoltar.js"></script>
+        <script src="js/produtos.js"></script>
+        <script src="js/promocoes.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/cart.js"></script>
+    </body>
+</html>
