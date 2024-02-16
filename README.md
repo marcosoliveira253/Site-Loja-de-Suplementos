@@ -21,4 +21,4 @@ Sinta-se à vontade para contribuir para este projeto. Se você encontrar proble
 Este site foi desenvolvido por Marcos Oliveira Dev.<br>
 © 2024 Marcos Oliveira Dev. Todos os direitos reservados.
 
-![Texto Alternativo](URL_da_Imagem)
+![Texto Alternativo](https://github.com/marcosoliveira253/Site-Loja-de-Suplementos/blob/main/client/image/capa.jpg)
